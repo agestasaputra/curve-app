@@ -2,12 +2,38 @@ import styled from "styled-components";
 import color from "config/guidlines/color";
 import { S_DEVICES_WIDTH, XS_DEVICES_WIDTH } from "config/guidlines/display";
 
+export const Container = styled.nav`
+  .portofolio-list-menu-mobile {
+    display: none;
+    width: 100%;
+    border: 1px solid #dbdbdb;
+    padding: 10px;
+
+    &.show {
+      display: grid;
+    }
+
+    .dropdown-item {
+      padding: 0px;
+      color: #110097;
+      margin: 5px 0px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+`;
 export const Navbar = styled.nav`
   display: flex;
   flex-flow: row nowrap;
   padding: 20px;
   background: ${color.brand.primaryWhite};
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+
+  @media (max-width: ${XS_DEVICES_WIDTH}) {
+    padding: 10px;
+  }
 `;
 export const NavbarLeft = styled.div`
   flex: 1;
@@ -65,7 +91,7 @@ export const NavbarLeft = styled.div`
     }
   }
 `;
-export const NavbarRight = styled.div`}
+export const NavbarRight = styled.div`
   flex: 0.25;
   display: flex;
   align-items: center;

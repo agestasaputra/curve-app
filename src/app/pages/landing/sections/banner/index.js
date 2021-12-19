@@ -6,7 +6,6 @@ const Banner = () => {
   return (
     <Container>
       <Text>
-        <H1 className="title-1">Hello! I'm Agesta Saputra</H1>
         <H1 className="title-2">
           We use only the finest and <br />
           freshest ingredients

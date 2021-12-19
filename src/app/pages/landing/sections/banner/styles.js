@@ -5,8 +5,7 @@ import { XS_DEVICES_WIDTH, S_DEVICES_WIDTH, M_DEVICES_WIDTH } from "config/guidl
 
 export const Container = styled.div`
   width: 100%;
-  /* height: 600px; */
-  height: 74vh;
+  height: 600px;
   background-image: url(${BannerImg});
   background-repeat: no-repeat;
   background-size: 100%;
@@ -15,15 +14,15 @@ export const Container = styled.div`
   flex-flow: column nowrap;
   align-items: flex-start;
   justify-content: center;
-  /* filter: sepia(90%) hue-rotate(170deg) saturate(500%) grayscale(20%); */
 
   @media (max-width: ${S_DEVICES_WIDTH}) {
-    height: 300px;
+    /* height: 50vh; */
+    height: unset;
   }
 
-  @media (max-width: ${XS_DEVICES_WIDTH}) {
+  /* @media (max-width: ${XS_DEVICES_WIDTH}) {
     height: 200px;
-  }
+  } */
 
   .logo {
     margin: 2%;
@@ -61,13 +60,15 @@ export const Text = styled.div`
     margin: 10px 0px;
     color: ${color.brand.primaryWhite} !important;
     line-height: 32px;
-
+    text-align: center;
+    
     @media (max-width: ${M_DEVICES_WIDTH}) {
       margin: 15px 0px;
     }
-
+    
     @media (max-width: ${XS_DEVICES_WIDTH}) {
       margin: 10px 0px;
+      line-height: 19px;
     }
   }
 
@@ -84,7 +85,6 @@ export const Text = styled.div`
   .btn {
     border-radius: 4em;
     margin: 5px auto;
-    min-width: 160px;
 
     @media (max-width: ${XS_DEVICES_WIDTH}) {
       font-size: 8px;
