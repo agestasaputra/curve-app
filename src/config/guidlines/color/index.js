@@ -6,6 +6,7 @@ const color = {
     primaryDarkBlue: "#004a75",
     primaryOrange: "#ff8000",
     primaryDarkOrange: "#cc6600",
+    primaryLightGray: "#767676",
     primaryGray: "#e5e5e5",
     primaryDarkGray: "#5e5e5e",
     primaryPurple: "#170849"

@@ -3,6 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import Routes from "config/routes";
 import { Context, Provider } from "./context";
 import "font-awesome/css/font-awesome.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function MainContent() {
   const { state, dispatch } = React.useContext(Context);

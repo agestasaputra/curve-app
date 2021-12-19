@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+import Header from "app/components/header";
 import Footer from "app/components/footer";
 import Landing from "app/pages/landing";
 // import AuthenticatedRoute from "./AuthenticatedRoute";
@@ -8,6 +9,7 @@ import Landing from "app/pages/landing";
 const Routes = ({ state, dispatch }) => {
   return (
     <React.Suspense fallback={null}>
+      <Header />
       <Switch>
         {/* <UnauthenticatedRoute
           exact
