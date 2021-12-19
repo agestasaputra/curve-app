@@ -17,3 +17,6 @@ $ yarn start
 # deploying to github pages
 $ yarn deploy
 ```
+
+## Live Demo
+https://agestasaputra.github.io/curve-app/
