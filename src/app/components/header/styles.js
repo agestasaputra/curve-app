@@ -28,7 +28,7 @@ export const NavbarLeft = styled.div`
     }
 
     width: 100%;
-    padding: 10px 0px;
+    padding: 30px 0px 10px 0px;
     grid-template-columns: 1fr 1fr 1fr;
     left: 0;
     

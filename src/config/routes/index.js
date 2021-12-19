@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Header from "app/components/header";
-import Footer from "app/components/footer";
 import Landing from "app/pages/landing";
 // import AuthenticatedRoute from "./AuthenticatedRoute";
 // import UnauthenticatedRoute from "./UnauthenticatedRoute";
@@ -25,7 +24,6 @@ const Routes = ({ state, dispatch }) => {
           )}
         />
       </Switch>
-      <Footer />
     </React.Suspense>
   );
 };

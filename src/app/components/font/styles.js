@@ -127,16 +127,16 @@ export const H6Styles = styled.h5`
   line-height: 15px;
 
   @media (max-width: ${M_DEVICES_WIDTH}) {
-    font-size: 10px;
+    font-size: 9px;
   }
 
   @media (max-width: ${S_DEVICES_WIDTH}) {
-    font-size: 18px;
+    font-size: 12;
   }
 
   @media (max-width: ${XS_DEVICES_WIDTH}) {
     font-size: 9px;
-    line-height: 15px;
+    line-height: 12px;
   }
 `;
 
