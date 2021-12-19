@@ -1,21 +1,20 @@
 import styled from "styled-components";
 import color from "config/guidlines/color";
-import { XS_DEVICES_WIDTH } from "config/guidlines/display";
+import { S_DEVICES_WIDTH, XS_DEVICES_WIDTH } from "config/guidlines/display";
 
-export const Container = styled.div``;
-export const NavbarDesktop = styled.nav`
+export const Navbar = styled.nav`
   display: flex;
   flex-flow: row nowrap;
   padding: 20px;
   background: ${color.brand.primaryWhite};
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+`;
+export const NavbarLeft = styled.div`
+  flex: 1;
 
   @media (max-width: ${XS_DEVICES_WIDTH}) {
-    padding: 30px 0px;
+    display: none;
   }
-`;
-export const NavbarDesktopLeft = styled.div`
-  flex: 1;
   
   .btn {
     color: ${color.brand.primaryLightGray};
@@ -66,18 +65,48 @@ export const NavbarDesktopLeft = styled.div`
     }
   }
 `;
-export const NavbarDesktopRight = styled.div`}
+export const NavbarRight = styled.div`}
   flex: 0.25;
   display: flex;
   align-items: center;
 
-  i {
+  @media (max-width: ${S_DEVICES_WIDTH}) {
+    flex: 0.5;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media (max-width: ${XS_DEVICES_WIDTH}) {
+    flex: 1;
+  }
+
+  .fa-shopping-cart, .fa-search {
     color: ${color.brand.primaryLightGray};
     margin-right: 20px;
 
     &:hover {
       cursor: pointer;
       color: black;
+    }
+  }
+
+  .fa-bars {
+    display: none;
+    color: ${color.brand.primaryLightGray};
+
+    &:hover {
+      cursor: pointer;
+      color: black;
+    }
+
+    @media (max-width: ${XS_DEVICES_WIDTH}) {
+      display: block;
+    }
+  }
+
+  input {
+    @media (max-width: ${XS_DEVICES_WIDTH}) {
+      display: none;
     }
   }
 `;

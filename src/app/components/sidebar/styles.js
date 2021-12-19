@@ -1,10 +1,15 @@
 import styled from "styled-components";
+import { XS_DEVICES_WIDTH } from "config/guidlines/display";
 
 export const Container = styled.div`
   position: fixed;
   display: flex;
   top: 40%;
   right: 0;
+
+  @media (max-width: ${XS_DEVICES_WIDTH}) {
+    display: none;
+  }
 
   .title-list {
     display: flex;
@@ -28,25 +33,6 @@ export const Container = styled.div`
       &.show {
         visibility: visible;
       }
-
-      /* .title-comment {
-        display: flex
-      }
-      .title-ticket {
-        display: flex
-      }
-      .title-documentation {
-        display: flex
-      }
-      .title-video {
-        display: flex
-      }
-      .title-about {
-        display: flex
-      }
-      .title-shopping-cart {
-        display: flex
-      } */
     }
   }
 
