@@ -2,7 +2,8 @@ import styled from "styled-components";
 import color from "config/guidlines/color";
 import { XS_DEVICES_WIDTH } from "config/guidlines/display";
 
-export const Navbar = styled.nav`
+export const Container = styled.div``;
+export const NavbarDesktop = styled.nav`
   display: flex;
   flex-flow: row nowrap;
   padding: 20px;
@@ -13,11 +14,16 @@ export const Navbar = styled.nav`
     padding: 30px 0px;
   }
 `;
-export const NavbarLeft = styled.div`
+export const NavbarDesktopLeft = styled.div`
   flex: 1;
   
   .btn {
     color: ${color.brand.primaryLightGray};
+
+    &:hover {
+      cursor: pointer;
+      color: black;
+    }
   }
   
   .portofolio-list-menu {
@@ -60,7 +66,7 @@ export const NavbarLeft = styled.div`
     }
   }
 `;
-export const NavbarRight = styled.div`}
+export const NavbarDesktopRight = styled.div`}
   flex: 0.25;
   display: flex;
   align-items: center;
