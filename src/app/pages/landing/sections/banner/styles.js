@@ -5,7 +5,7 @@ import { XS_DEVICES_WIDTH, S_DEVICES_WIDTH, M_DEVICES_WIDTH } from "config/guidl
 
 export const Container = styled.div`
   width: 100%;
-  height: 600px;
+  height: 700px;
   background-image: url(${BannerImg});
   background-repeat: no-repeat;
   background-size: 100%;
